@@ -1,0 +1,168 @@
+/**
+ * Style Defaults
+ */
+
+a:link {
+  color: #808080;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.body {
+  color: #505050;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: black;
+}
+.wrapper{
+  max-width:960px;
+  margin:0 auto;
+}
+/**
+*Typographic Styles
+*/
+
+h1,
+h2,
+ol,
+p,
+ul{
+  line-height: 1.5;
+}
+
+h1 {
+  color:white;
+  font-size:2rem;
+  margin:0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin:0 0 1.5rem;
+}
+
+ol,
+p,
+ul {
+  font-size: 1.125rem;
+  margin:0 0 1.5rem;
+}
+
+/**
+ * Layout Styles
+ *
+ * @ToDo: Create and style a .main-header class
+ *        - Add padding
+ *        - Display as flexbox
+ *        - Align heading and menu along X axis
+ *        - Nav items should be aligned to the right
+ */
+
+.header {
+  font-family:sans-serif;
+  margin-bottom:2rem;
+  padding:1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width:720px;
+  padding:.75rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-item {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav-item a {
+  display:inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.copyright {
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/**
+* Utilities
+*/
+.flex{
+  display:flex;
+}
+.items-center {
+  align-items:center;
+}
+.space-between {
+  justify-content:space-between;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.horizontal-line {
+  display:inline-block;
+  width:100%;
+  height:2.5px;
+  background-color:black;
+}
+/**
+ * Larger Screens
+ *
+ * Use this media query for desktop styles
+ */
+@media screen and (min-width: 640px){
+  .container {
+    padding:1.5rem;
+  }
+  
+  .header {
+/*     display: flex; 
+    align-item:center;
+    justify-content:space-between; */
+  }
+  
+  .main-nav-list {
+/*     display: flex;
+     align-items:center; */
+  }
+    /**
+  * Utilities
+  */
+  .flex-md{
+    display:flex;
+  }
+  .items-center-md {
+    align-items:center;
+  }
+  .space-between-md {
+    justify-content:space-between;
+  }
+  .row-md{
+  flex-direction: row;
+  }
+
+  .row-reverse-md {
+  flex-direction: row-reverse;
+  }
+  
+}

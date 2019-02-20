@@ -56,12 +56,6 @@ ul {
 
 /**
  * Layout Styles
- *
- * @ToDo: Create and style a .main-header class
- *        - Add padding
- *        - Display as flexbox
- *        - Align heading and menu along X axis
- *        - Nav items should be aligned to the right
  */
 
 .header {
@@ -148,6 +142,7 @@ ul {
     /**
   * Utilities
   */
+  
   .flex-md{
     display:flex;
   }
